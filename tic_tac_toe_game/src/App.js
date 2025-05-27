@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
+import TicTacToeContainer from './TicTacToeContainer';
 
+// PUBLIC_INTERFACE
 function App() {
   return (
     <div className="app">
@@ -14,20 +16,9 @@ function App() {
           </div>
         </div>
       </nav>
-
       <main>
         <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">tic_tac_toe_game</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
+            <TicTacToeContainer />
         </div>
       </main>
     </div>
