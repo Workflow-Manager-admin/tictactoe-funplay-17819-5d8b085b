@@ -106,3 +106,55 @@ body {
   padding: 12px 24px;
   font-size: 1.1rem;
 }
+
+/* TicTacToe container and grid styles */
+.ttt-container {
+  background: rgba(26,26,26,0.92);
+  border-radius: 14px;
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  padding: 32px 20px 20px 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ttt-status {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 22px;
+  color: var(--kavia-orange);
+  text-align: center;
+  min-height: 30px;
+}
+
+.ttt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.ttt-cell {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: 600;
+  background: var(--kavia-dark);
+  color: var(--text-color);
+  border: 2px solid var(--kavia-orange);
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: background .18s;
+}
+.ttt-cell:disabled {
+  cursor: not-allowed;
+  background: #393939;
+  color: var(--text-secondary);
+}
+.ttt-reset-btn {
+  margin-top: 8px;
+}
